@@ -11,25 +11,17 @@
 
 <p align="center">
 An AI-powered, full-stack application that transforms text prompts into stunning mathematical animations. Using Google's Gemini API for code generation and a Node.js backend to drive the powerful Manim animation engine, this project makes creating complex animations as simple as writing a sentence.
-</p>
 
-<p align="center">
-<img src="https://www.google.com/search?q=https://i.imgur.com/your-banner-image-url.png" alt="Project Banner">
-</p>
-> Note: To replace the banner above, upload a screenshot of your project to a service like Imgur and paste the link.
 
 🎬 Showcase: Generated Videos
 Here are some examples of animations created with this application. Click on any thumbnail to watch the full video on YouTube.
 
 Compilation of Outputs
+https://www.youtube.com/watch?v=ytdcHXuGuBg
+
 
 solar System
 
-
-
-
-
-https://www.youtube.com/watch?v=ytdcHXuGuBg
 
 https://youtu.be/I0w29H5BYjA
 
