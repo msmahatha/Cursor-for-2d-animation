@@ -1,32 +1,37 @@
 # Cursor-for-2d-animation
 🤖 AI Animator: Text-to-Video with Manim and Gemini
+<div align="center">
+
 [][React-url]
 [][Node-url]
 [][Manim-url]
 [][Gemini-url]
 
-An AI-powered, full-stack application that transforms text prompts into stunning mathematical animations. Using Google's Gemini API for code generation and a Node.js backend to drive the powerful Manim animation engine, this project makes creating complex animations as simple as writing a sentence.
+</div>
 
-Note: To replace the banner above, upload your project screenshot to a service like Imgur and paste the link.
+<p align="center">
+An AI-powered, full-stack application that transforms text prompts into stunning mathematical animations. Using Google's Gemini API for code generation and a Node.js backend to drive the powerful Manim animation engine, this project makes creating complex animations as simple as writing a sentence.
+</p>
+
+<p align="center">
+<img src="https://www.google.com/search?q=https://i.imgur.com/your-banner-image-url.png" alt="Project Banner">
+</p>
+> Note: To replace the banner above, upload a screenshot of your project to a service like Imgur and paste the link.
 
 🎬 Showcase: Generated Videos
-This is where you can show off the amazing videos this application creates! Simply record a GIF or upload a video of your output and add it to the table below.
+Here are some examples of animations created with this application. Click on any thumbnail to watch the full video on YouTube.
 
-Animation Description
+Compilation of Outputs
 
-Output
-
-A circle morphing into a square
+solar System
 
 
 
-A rotating DNA helix
 
-Your GIF/Video Link Here
 
-A 3D bar chart with animating bars
+https://www.youtube.com/watch?v=ytdcHXuGuBg
 
-Your GIF/Video Link Here
+https://youtu.be/I0w29H5BYjA
 
 ✨ Key Features
 AI Code Generation: Leverages the Google Gemini API to interpret natural language prompts and generate the corresponding Python code for the Manim animation library.
@@ -79,8 +84,8 @@ A Google AI API Key.
 Installation
 Clone the repository:
 
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/msmahatha/Cursor-for-2d-animation
+
 
 Set up the Frontend:
 
@@ -91,9 +96,8 @@ cd frontend
 npm install
 
 # Create a local environment file
-cp .env.example .env.local
-
-# Add your Google AI API key to .env.local
+# In your frontend folder, create a file named .env.local
+# and add the following line:
 VITE_GEMINI_API_KEY="YOUR_API_KEY_HERE"
 
 Set up the Backend:
@@ -140,8 +144,21 @@ Response: The backend returns the URL of the newly created video to the frontend
 
 Display: The frontend receives the URL and displays the video in the preview pane.
 
+🗺️ Roadmap
+This project is under active development. Future goals include:
+
+[ ] User Authentication: Allow users to sign up and save their creation history.
+
+[ ] Higher Quality Renders: Add options to render videos in higher resolutions (720p, 1080p).
+
+[ ] Interactive Code Editor: Allow users to edit the AI-generated code directly in the browser and re-render.
+
+[ ] Cloud Deployment: A guide for deploying the full-stack application to a cloud service.
+
 📄 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+<!-- Markdown Link & Image Definitions -->
 
 []: #
 [react-url]: https://www.google.com/search?q=%5Bhttps://reactjs.org/%5D(https://reactjs.org/)
