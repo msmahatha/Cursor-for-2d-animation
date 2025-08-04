@@ -1,31 +1,34 @@
- # Use an official Node.js runtime as a parent image
+# Use an official Node.js image
 FROM node:18-slim
 
-# Set the working directory in the container
+# Set working directory
 WORKDIR /usr/src/app
 
-# Install system dependencies needed for Python, Manim, and FFMPEG
+# Install system dependencies needed by Manim and others
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
+    python3-dev \
+    build-essential \
     ffmpeg \
     texlive-full \
+    libcairo2-dev \
+    libpango1.0-dev \
+    libgdk-pixbuf2.0-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Manim using pip
-RUN pip3 install manim
+# Upgrade pip and install Manim
+RUN pip3 install --upgrade pip && pip3 install manim
 
-# Copy package.json and package-lock.json
+# Copy Node.js dependencies and install
 COPY package*.json ./
-
-# Install Node.js app dependencies
 RUN npm install
 
-# Bundle app source
+# Copy the rest of the application code
 COPY . .
 
-# Your app binds to port 5001
+# Expose the backend port
 EXPOSE 5001
 
-# Define the command to run your app
-CMD [ "node", "index.js" ]
+# Start the Node.js server
+CMD ["node", "index.js"]
