@@ -5,11 +5,14 @@ FROM node:18-slim
 WORKDIR /usr/src/app
 
 # Install system dependencies needed for Python, Manim, and FFMPEG
+# NEW: Added pkg-config and libcairo2-dev for pycairo dependency
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     ffmpeg \
     texlive-full \
+    pkg-config \
+    libcairo2-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Manim using pip, adding the --break-system-packages flag to both commands
