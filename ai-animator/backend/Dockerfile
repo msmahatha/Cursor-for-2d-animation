@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y \
     texlive-full \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Manim using pip, adding the --break-system-packages flag to resolve the error
-RUN pip3 install --upgrade pip && pip3 install manim --break-system-packages
+# Install Manim using pip, adding the --break-system-packages flag to both commands
+RUN pip3 install --upgrade pip --break-system-packages && pip3 install manim --break-system-packages
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
